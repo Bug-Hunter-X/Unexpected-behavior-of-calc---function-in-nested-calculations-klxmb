@@ -1,0 +1,9 @@
+The CSS property `calc()` is not working as expected when using percentages or other units within nested calculations. For example, the following code snippet intends to set the width of an element to 50% of its parent's width, minus 20 pixels:
+
+```css
+.element {
+  width: calc(50% - 20px);
+}
+```
+
+However, in certain scenarios, especially when dealing with complex layouts or nested elements, `calc()` might not produce the correct result. It might misinterpret the units or fail to correctly apply the calculation.
